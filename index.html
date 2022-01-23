@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1d526ad034.js" crossorigin="anonymous"></script>
+    <title>chocot App</title>
+</head>
+<body>
+    <div class="bgCover"></div>
+    <h3 id="pageInfo">This page was desgined for 1920px * 937px</h3>
+    <div>
+        <h1 id="headTitle">
+            Desgin<br>
+            &emsp;&nbsp;&nbsp;Your<br>
+            &nbsp;&nbsp;Life
+        </h1>
+        <hr>
+        <h2 id="clock">00:00:00</h2>
+    </div>
+    <div class="boxCover"></div>
+    <div id="userBox" class="box">
+        <form id="login" class="hidden">
+            <input
+                type="text" 
+                maxlength="16"
+                placeholder="Enter your Id" 
+                required
+            /><button>Log In</button>
+        </form>
+        <h1 id="greeting" class="hidden">
+            Hello!<br>
+            <span id="userName"></span>
+        </h1>
+        <hr>
+        <div id="weather">
+            <h2 class="boxTitle"></h2>
+            <p id="clear" class="hidden weatherIcon"><i class="fas fa-sun"></i></p>
+            <p id="cloud" class="hidden weatherIcon"><i class="fas fa-cloud"></i></p>
+            <p id="rain" class="hidden weatherIcon"><i class="fas fa-cloud-showers-heavy"></i></p>
+            <p id="drizzle" class="hidden weatherIcon"><i class="fas fa-cloud-rain"></i></p>
+            <p id="thunder" class="hidden weatherIcon"><i class="fas fa-bolt"></i></p>
+            <p id="snow" class="hidden weatherIcon"><i class="far fa-snowflake"></i></p>
+            <p id="smog" class="hidden weatherIcon"><i class="fas fa-smog"></i></p>
+            <p id="atmosInfo">
+                <span id="weatherInfo"></span><br>
+                <i class="fas fa-temperature-high"></i><span id="temp"></span> / <i class="fas fa-tint"></i><span id="humid"></span>
+            </p>
+        </div>
+    </div>
+    <div id="quoteBox" class="box">
+        <h3 class="boxTitle">Today's quote</h3>
+        <hr>
+        <span id="quote"></span>
+        <span id="author"></span>
+    </div>
+    <div id="planBox" class="box">
+        <h3 class="boxTitle">To Do List</h3>
+        <hr>
+        <ul id="planList"></ul>
+        <form id="addPlanForm">
+            <input id="inputPlan"
+                type="text" 
+                placeholder="Make your Plan !" 
+                required
+            />
+            <button id="addToDo"><span>+</span><span>Add New</span></button>
+        </form>
+    </div>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
