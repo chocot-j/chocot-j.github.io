@@ -1,0 +1,385 @@
+img {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.prevImg {
+    z-index: -2;
+}
+
+.fadeinEffect {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+.bgCover {
+    background-color: black;
+    opacity: 0.5;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    position:absolute;
+    z-index: 0;
+}
+
+.boxCover {
+    background-color: black;
+    opacity: 0.7;
+    width: 60%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    position:absolute;
+    z-index: 1;
+}
+
+.box {
+    margin: 0;
+    line-height: normal;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.boxTitle {
+    margin: 15px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.planLi {
+    background: rgba(255, 255, 255, 0.7);
+    display: block;
+    height: 50px;
+    padding: 5px 5px 5px 10px;
+    margin : 5px 3px 5px 3px;
+    border-radius: 5px;
+    color: #404040;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.weatherIcon {
+    font-size: 120px;
+    text-align: center;
+    margin: 0;
+}
+
+.fa-temperature-high {
+    margin-right: 10px;
+}
+
+.fa-tint {
+    margin-right: 10px;
+}
+
+#headTitle {
+    color: white;
+    line-height: 1.8;
+    font-size: 100px;
+    position: absolute;
+    left: 180px;
+    z-index: 2;
+}
+
+#pageInfo {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#clock {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    left: 206px;
+    top: 660px;
+    z-index: 2;
+}
+
+#userBox {
+    width: 360px;
+    height: 480px;
+    position: absolute;
+    right: 640px;
+    top: 60px;
+}
+
+#quoteBox {
+    width: 360px;
+    height: 326px;
+    position: absolute;
+    right: 640px;
+    top: 550px;
+}
+
+#planBox {
+    width: 540px;
+    height: 816px;
+    position: absolute;
+    right: 90px;
+    top: 60px;
+}
+
+#greeting {
+    margin: 15px;
+    text-align: left;
+    font-size: 40px;
+}
+
+#login {
+    width: 360px;
+    height: 130px;
+    margin: 0;
+}
+
+#addToDo {
+    padding: 0;
+    width: 120px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    display: inline-flex;
+    background: #2980b9;
+    overflow: hidden;
+    position: absolute;
+    top: 760px;
+    right: 6px;
+}
+
+#addToDo:hover {
+    background: #2770a1;
+}
+
+#addToDo > span:first-child {
+    padding: 0 8px;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    pointer-events: none;
+}
+
+#addToDo > span:last-child {
+    padding: 0 5px;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    pointer-events: none;
+}
+
+#completeBtn {
+    width: 28px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0);
+    border: 3px solid #404040;
+    color: #404040;
+    border-radius: 10px;
+    margin-right: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+
+#completeBtn > i {
+    pointer-events: none;
+}
+
+#completeBtn:hover {
+    border-color: #8cbd47;
+    color: #8cbd47;
+}
+
+#deleteBtn {
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0);
+    color: rgba(64, 64, 64, 0.7);
+    margin: 0;
+    padding: 0;
+    font-size:16px;
+    border: 0;
+    position: absolute;
+    right: 10px;
+}
+
+#deleteBtn > i {
+    pointer-events: none;
+}
+
+#deleteBtn:hover {
+    color: black;
+}
+
+#inputPlan {
+    width: 380px;
+    height: 50px;
+    margin: 0;
+    border: 0;
+    border-bottom: 3px solid #404040;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 754px;
+    right: 135px;
+}
+
+#inputPlan::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+#userBox > hr {
+    width: 340px;
+    height: 2px;
+    background-color: #C0C0C0;
+    border: 0;
+    text-align: center;
+}
+
+#quoteBox > hr {
+    width: 340px;
+    height: 2px;
+    background-color: #C0C0C0;
+    border: 0;
+    text-align: center;
+}
+
+#planBox > hr {
+    width: 520px;
+    height: 2px;
+    background-color: #C0C0C0;
+    border: 0;
+    text-align: center;
+}
+
+#headTitle + hr {
+    width: 300px;
+    height:4px;
+    background-color: #C0C0C0;
+    border: 0;
+    position: absolute;
+    left: 220px;
+    top: 660px;
+    z-index: 2;
+}
+
+#quoteBox > span#quote {
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    word-break:break-all;
+    display: inline-block;
+    width: 340px;
+    padding: 10px;
+}
+
+#quoteBox > span#author {
+    text-align: center;
+    font-size: 18px;
+    word-break:break-all;
+    color: #404040;
+    display: inline-block;
+    width: 340px;
+    padding: 10px;
+}
+
+#login > input {
+    width: 220px;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
+#login > input::placeholder {
+    font-size: 14px;
+    padding: 10px;
+}
+
+#login > button {
+    font-size: 24px;
+    width: 100px;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    border-bottom: 3px solid #206694;
+    background-color: #2980b9;
+    color: white;
+    font-style: bold;
+    position: relative;
+    top: 42px;
+    left: 15px;
+}
+
+#login > button:hover {
+    background: #2770a1;
+}
+
+#weather > p#atmosInfo {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
